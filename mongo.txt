@@ -1,0 +1,17 @@
+ mongo
+
+use members_st10477821
+switched to db members_st10477821
+
+db.members_st10477821.insertMany([{name:"Debbie",surname:"Theart",DOB:"1980-03-17"},{name:"Thomas",surname:"Duncan",DOB:"1976-08-12"}])
+
+
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('6915db28b36a73f9c1860bd5'),
+    '1': ObjectId('6915db28b36a73f9c1860bd6')
+  }
+}
+db.members_st10477821.find()
+
+db.members_st10477821.find({DOB:{$gt:"1979-01-12"}})
